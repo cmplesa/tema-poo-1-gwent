@@ -1,10 +1,16 @@
-package org.poo.main;
+package org.poo.main.game;
 
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import org.poo.fileio.ActionsInput;
 import org.poo.fileio.CardInput;
 import org.poo.fileio.DecksInput;
-import org.poo.fileio.GameInput;
+import org.poo.main.RunHelpers.MagicNumbers;
+import org.poo.main.Player;
+import org.poo.main.RunHelpers.ActionDecider;
+import org.poo.main.RunHelpers.ToJson;
+import org.poo.main.cards.Card;
+import org.poo.main.cards.Minion;
+import org.poo.main.decks.Decks;
 
 import java.util.ArrayList;
 

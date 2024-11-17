@@ -1,5 +1,10 @@
 package org.poo.main;
 
+import org.poo.main.cards.Card;
+import org.poo.main.cards.Hero;
+import org.poo.main.decks.Decks;
+import org.poo.main.game.Game;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Random;

@@ -1,7 +1,8 @@
-package org.poo.main;
+package org.poo.main.cards;
 
-import org.poo.fileio.CardInput;
 import org.poo.fileio.ActionsInput;
+import org.poo.main.RunHelpers.MagicNumbers;
+import org.poo.main.Player;
 
 import java.util.ArrayList;
 

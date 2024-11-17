@@ -10,6 +10,8 @@ import org.poo.fileio.DecksInput;
 import org.poo.fileio.GameInput;
 import org.poo.fileio.ActionsInput;
 import org.poo.fileio.StartGameInput;
+import org.poo.main.cards.Hero;
+import org.poo.main.game.Game;
 
 import java.util.ArrayList;
 

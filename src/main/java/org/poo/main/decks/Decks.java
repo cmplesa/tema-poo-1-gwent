@@ -1,4 +1,6 @@
-package org.poo.main;
+package org.poo.main.decks;
+
+import org.poo.main.cards.Card;
 
 import java.util.ArrayList;
 

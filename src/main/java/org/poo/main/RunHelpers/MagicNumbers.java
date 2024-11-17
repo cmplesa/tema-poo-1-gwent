@@ -1,4 +1,4 @@
-package org.poo.main;
+package org.poo.main.RunHelpers;
 
 public enum MagicNumbers {
     MAX_BACK_ROW_SIZE(5),

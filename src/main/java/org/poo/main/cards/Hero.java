@@ -1,6 +1,7 @@
-package org.poo.main;
+package org.poo.main.cards;
 
 import org.poo.fileio.CardInput;
+
 import java.util.ArrayList;
 
 public final class Hero extends Card {
