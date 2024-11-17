@@ -1,0 +1,5 @@
+Starting audit...
+[ERROR] /home/cmplesa/Desktop/oop-asignments/teme/GwentStone Light - Maven/./src/main/java/org/poo/main/Game.java:7:8: Unused import - org.poo.fileio.GameInput. [UnusedImports]
+[ERROR] /home/cmplesa/Desktop/oop-asignments/teme/GwentStone Light - Maven/./src/main/java/org/poo/main/Card.java:3:8: Unused import - org.poo.fileio.CardInput. [UnusedImports]
+Audit done.
+Checkstyle ends with 2 errors.
