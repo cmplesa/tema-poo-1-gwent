@@ -27,6 +27,10 @@ the gameplay.
     - Does the deep copy of the decks
     - Does the endTurn method and the drawCard method
     - It sets the game
+- *WinsManager*:  
+    - It is a singleton class that manages the wins of the players
+- *Command*:  
+    - It is an enum that contains the commands that the players can do
 
 ### *Package: Decks*
 

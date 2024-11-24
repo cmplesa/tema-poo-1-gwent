@@ -40,7 +40,7 @@ public final class WinsManager {
      * Increments the wins for Player One.
      */
     public void incrementPlayerOneWins() {
-        wins.set(0, wins.get(0) + 1);
+        wins.set(0, wins.getFirst() + 1);
     }
 
     /**

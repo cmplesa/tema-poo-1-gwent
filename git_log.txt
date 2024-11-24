@@ -1,3 +1,9 @@
+commit a94bc25fbabb842355c680b8fff8943c74ef8e81
+Author: cmplesa <cosmin.pl04@gmai.com>
+Date:   Sun Nov 24 20:04:27 2024 +0200
+
+    more POO style
+
 commit 985ac9d4d0615b5d491c6d816474fd11c8418851
 Author: cmplesa <cosmin.pl04@gmai.com>
 Date:   Sun Nov 17 22:06:47 2024 +0200
