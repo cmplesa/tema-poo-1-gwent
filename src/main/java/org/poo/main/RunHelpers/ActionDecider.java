@@ -11,6 +11,7 @@ import org.poo.main.cards.Card;
 import org.poo.main.cards.Hero;
 import org.poo.main.cards.Minion;
 import org.poo.main.game.Game;
+import org.poo.main.game.WinsManager;
 
 import java.util.ArrayList;
 
@@ -63,7 +64,7 @@ public class ActionDecider {
      * @param output the ArrayNode to store the output
      * @param toJson the toJson instance to handle JSON operations
      */
-    public void placeCardIf(final ActionsInput action, final Game game, final Player playerOne,
+    public void  placeCardIf(final ActionsInput action, final Game game, final Player playerOne,
                             final Player playerTwo, final int index, final ArrayNode output,
                             final ToJson toJson) {
         if (game.getTurn() == MagicNumbers.PLAYER_ONE_TURN.getValue() && action.getHandIdx()
@@ -403,12 +404,12 @@ public class ActionDecider {
      * @param game
      * @param output
      * @param toJson
-     * @param wins
+     * @param winsManager
      * @param action
      */
     public void useAttackHero(final Player playerOne, final Player playerTwo, final Game game,
                               final ArrayNode output, final ToJson toJson,
-                              final ArrayList<Integer> wins, final ActionsInput action) {
+                              final WinsManager winsManager, final ActionsInput action) {
         Player player = new Player();
         Card attackerCard = player.getPlayerCard(playerOne, playerTwo,
                 action.getCardAttacker().getX(), action.getCardAttacker().getY());
@@ -457,12 +458,12 @@ public class ActionDecider {
                     ObjectNode objectNode = new ObjectMapper().createObjectNode();
                     objectNode.put("gameEnded", "Player two killed the enemy hero.");
                     output.add(objectNode);
-                    wins.set(1, wins.get(1) + 1);
+                    winsManager.incrementPlayerTwoWins();
                 } else {
                     ObjectNode objectNode = new ObjectMapper().createObjectNode();
                     objectNode.put("gameEnded", "Player one killed the enemy hero.");
                     output.add(objectNode);
-                    wins.set(0, wins.get(0) + 1);
+                    winsManager.incrementPlayerOneWins();
                 }
             }
         }

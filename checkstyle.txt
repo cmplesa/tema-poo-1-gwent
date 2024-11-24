@@ -1,2 +1,5 @@
 Starting audit...
+[ERROR] /home/cmplesa/Desktop/tema-poo-1-gwent/./src/main/java/org/poo/main/game/Game.java:248: Line is longer than 100 characters (found 116). [LineLength]
+[ERROR] /home/cmplesa/Desktop/tema-poo-1-gwent/./src/main/java/org/poo/main/game/WinsManager.java:1: File does not end with a newline. [NewlineAtEndOfFile]
 Audit done.
+Checkstyle ends with 2 errors.

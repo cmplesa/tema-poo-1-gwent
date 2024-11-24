@@ -1,0 +1,17 @@
+commit 985ac9d4d0615b5d491c6d816474fd11c8418851
+Author: cmplesa <cosmin.pl04@gmai.com>
+Date:   Sun Nov 17 22:06:47 2024 +0200
+
+    Updated README.md and explained the project
+
+commit e848cf91e198fece4e12179505bdec8d142e6f60
+Author: cmplesa <cosmin.pl04@gmai.com>
+Date:   Sun Nov 17 21:52:46 2024 +0200
+
+    Solved checkstyle.txt errors
+
+commit bc4f5e0c28a560577cf7bbf136bee8b3c3834eea
+Author: cmplesa <cosmin.pl04@gmai.com>
+Date:   Sun Nov 17 21:45:25 2024 +0200
+
+    Uploaded Homework

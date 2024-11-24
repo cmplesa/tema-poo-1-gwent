@@ -12,6 +12,7 @@ import org.poo.fileio.ActionsInput;
 import org.poo.fileio.StartGameInput;
 import org.poo.main.cards.Hero;
 import org.poo.main.game.Game;
+import org.poo.main.game.WinsManager;
 
 import java.util.ArrayList;
 
@@ -99,9 +100,10 @@ public final class Main {
         DecksInput playerOneDecksInput = inputData.getPlayerOneDecks();
         DecksInput playerTwoDecksInput = inputData.getPlayerTwoDecks();
         ArrayList<Integer> wins = new ArrayList<>();
+        WinsManager winsManager = WinsManager.getInstance();
+        winsManager.getWins().set(0, 0);
+        winsManager.getWins().set(1, 0);
         Game game = new Game(0, 0);
-        wins.add(0);
-        wins.add(0);
         for (GameInput gameInp : inputGames) {
             StartGameInput startGame = gameInp.getStartGame();
             Hero playerOneHero = new Hero(startGame.getPlayerOneHero());
@@ -112,8 +114,7 @@ public final class Main {
                     startGame.getPlayerTwoDeckIdx(), playerTwoHero);
             game = new Game(startGame.getShuffleSeed(), startGame.getStartingPlayer());
             ArrayList<ActionsInput> actions = gameInp.getActions();
-            game.run(playerOne, playerTwo, actions, game, wins, output);
-            System.out.println("one more game");
+            game.run(playerOne, playerTwo, actions, game, winsManager, output);
         }
 
         ObjectWriter objectWriter = objectMapper.writerWithDefaultPrettyPrinter();
